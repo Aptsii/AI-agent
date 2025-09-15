@@ -15,9 +15,8 @@ ENV PYTHONUNBUFFERED=1
 # 4. pip 업그레이드 & uv, uvicorn 설치
 RUN pip install --upgrade pip uv uvicorn
 
-# 5. 의존성 파일 & 소스 코드 복사
-COPY pyproject.toml uv.lock README.md ./
-COPY src ./src
+# 5. 소스 코드 복사
+COPY . .
 
 # 6. 의존성 설치
 RUN uv sync
