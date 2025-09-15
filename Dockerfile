@@ -14,6 +14,7 @@ ENV PYTHONUNBUFFERED=1
 
 # 4. pip 업그레이드 & uv, uvicorn 설치
 RUN pip install --upgrade pip uv uvicorn
+RUN pip install python-dotenv
 
 # 5. 소스 코드 복사
 COPY . .
