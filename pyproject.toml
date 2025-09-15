@@ -1,0 +1,24 @@
+[project]
+name = "coding-expert-agent"
+version = "0.1.0"
+description = "Stackload용 코딩 전문 AI 에이전트"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv>=1.0.1",
+  "langgraph>=0.2.35",
+  "langchain-core>=0.3.11",
+  "openai>=1.51.0",
+  "pydantic>=2.9.2",
+  "langchain-google-genai>=1.0.7",
+  "ddgs>=5.1.0",
+  "fastapi>=0.111.1",
+  "uvicorn[standard]>=0.30.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+package = true
+
