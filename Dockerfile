@@ -14,8 +14,7 @@ ENV PYTHONUNBUFFERED=1
 
 # 4. pip 업그레이드 & uv, uvicorn 설치
 RUN pip install --upgrade pip uv uvicorn
-RUN pip install python-dotenv
-RUN pip install fastapi
+RUN pip install python-dotenv langgraph langchain-core pydantic langchain-google-genai ddgs fastapi
 
 # 5. 소스 코드 복사
 COPY . .
